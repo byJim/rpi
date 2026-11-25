@@ -1,7 +1,6 @@
 # rpi
 
-Skill para [Claude Code](https://claude.com/claude-code) que convierte una tarea no trivial en cuatro
-fases con revisión humana entre ellas: **Spec → Research → Plan → Implement**.
+Spec-Driven Development con Research, Plan, Implement (RPI): **Spec → Research → Plan → Implement**.
 
 Cada fase deja un archivo en `specs/<AAAA-MM-DD>-<slug>/` de tu repo:
 
@@ -12,12 +11,15 @@ Cada fase deja un archivo en `specs/<AAAA-MM-DD>-<slug>/` de tu repo:
 | 2 — Plan      | `plan.md`     | Qué cambia, en qué orden y cómo se verifica               |
 | 3 — Implement | `plan.md`     | El mismo plan, usado como checklist vivo                  |
 
-La idea: revisar 60 líneas de plan es más barato que revisar 600 de diff. Los archivos son la memoria,
-así que entre fases puedes hacer `/clear` y retomar con `/rpi <slug>` sin perder nada.
+Las ideas:
+
+- Proporcionar un flujo de trabajo para programación agéntica.
+- Los archivos buscan ser la memoria y la fuente de verdad, así que entre fases puedes hacer `/clear` y retomar con `/rpi <slug>` sin perder nada.
+- Funciona muy bien con un agente `coordinador` y en otra sesión se arranca con `/rpi` (próximamente skill `coordinar`).
 
 ## Instalación
 
-Como plugin de Claude Code (recomendado):
+Como plugin en Claude Code:
 
 ```
 /plugin marketplace add byJim/rpi
@@ -67,10 +69,10 @@ claude plugin update rpi@byjim
 
 Los cambios de cada versión están en [`CHANGELOG.md`](CHANGELOG.md).
 
-## Idioma
+## Inspiración
 
-Las instrucciones de la skill están en español y los archivos que genera también. Claude responde en el
-idioma en que le escribas.
+La idea de trabajar en fases Research → Plan → Implement la tomé del curso
+[rpi-course](https://github.com/CodelyTV/rpi-course) de CodelyTV (tienen excelente contenido).
 
 ## Licencia
 

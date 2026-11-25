@@ -1,0 +1,13 @@
+{
+  "name": "rpi",
+  "version": "0.1.0",
+  "description": "Flujo Spec → Research → Plan → Implement para Claude Code: deja spec.md, research.md y plan.md en specs/, pausa para revisión humana entre fases e implementa contra el plan aprobado.",
+  "author": {
+    "name": "byJim",
+    "url": "https://github.com/byJim"
+  },
+  "homepage": "https://github.com/byJim/rpi",
+  "repository": "https://github.com/byJim/rpi",
+  "license": "MIT",
+  "keywords": ["rpi", "spec-driven", "research", "plan", "implement"]
+}

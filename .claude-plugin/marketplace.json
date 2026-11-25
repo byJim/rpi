@@ -1,0 +1,17 @@
+{
+  "name": "byjim",
+  "description": "Skills de byJim para Claude Code.",
+  "owner": {
+    "name": "byJim",
+    "url": "https://github.com/byJim"
+  },
+  "plugins": [
+    {
+      "name": "rpi",
+      "source": "./",
+      "description": "Flujo Spec → Research → Plan → Implement con archivos revisables en specs/ y pausas entre fases.",
+      "homepage": "https://github.com/byJim/rpi",
+      "license": "MIT"
+    }
+  ]
+}
